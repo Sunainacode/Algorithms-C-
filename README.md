@@ -30,13 +30,18 @@ The only tech-stack that you need to have for understanding these codes are: C++
 
 <a id="expl"></a>
 ## 5. Explanations
-<br>
 <a id="ls"></a>
 <h3>Linear Search</h3>
 Linear Search is a searching algorithm that searches for a particular element in an array in a serial order. For example: Let us assume that there are 10 elements in an array. To search for a particular element, there will be a loop that will check each index(position) of the array and print the position where the element is found. <br>
+Time Complexity: O(n) <br>
 <a id="bs"></b>
 <h3> Binary Search </h3>
 Binary Search is another searching algorithm that performs the same function as linear search but the time complexity(in simpler words: amount of time taken to complete the task) is lesser. Binary search searches an element faster than linear search when the array size increases. The only requirement of binary search is that the array must be in ascending order in which the searching is to be performed. <br>
+Time Complexity: O(log(n)) <br>
 <a id="js"></a>
 <h3> Jump Search </h3>
 Jump Search is a faster algorithm than Binary search. It is just a modified form of binary search where a small range of numbers are found in which the desired number lies by jumping some indexes in between. Then the desired index is found out by using linear search in that particular small range. The number of indices jumped is preferred to be the square root of the length of array.<br>
+Time Complexity: O(n/m + (m-1)) where n is the length of array and m is the jump size. <br>
+
+Time Complexity Analysis:  <br>
+Linear Search > Jump Search > Binary Search
